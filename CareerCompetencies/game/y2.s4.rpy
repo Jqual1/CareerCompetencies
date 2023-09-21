@@ -366,7 +366,7 @@ label notin:
     "You first apply to a local startup company that focuses on generating financial software for other businesses. Your next choice is a job at the local CVS."
     if avgcomp >= 35:
         $ make_request("got_startup")
-        "..."
+        "{i}...Time Passes...{/i}"
         "You get an email a couple of weeks later from the startup. They said they were interested and wanted to schedule a phone interview!"
         "You end up having it that day and it goes great. The conversation is easy, you ask meaningful questions, and even manage to sneak a couple of jokes in!"
         "They ended up loving you so much that they hire you on for a temporary position for the summer."
@@ -377,14 +377,14 @@ label notin:
 
     elif (avgcomp < 35 and avgcomp >=20):
         $ make_request("CVS")
-        "..."
+        "{i}...Time Passes...{/i}"
         "You got an email a couple of weeks later from the startup. Sadly, they ended up denying your request."
         "Luckily a few days later, the CVS ended up getting into contact with you and asked if you were still interested!"
         "You ended up spending your summer there. It was an okay time, friendly coworkers and you were getting paid but it didn't feel very fulfilling."
         "There is always an opportunity to improve, however, you have your whole life ahead of you."
     else:
         $ make_request("Bad_summer")
-        "..."
+        "{i}...Time Passes...{/i}"
         "Somehow, things got even worse. Both jobs denied you. You kept searching around for something to do over the summer but at this point, there wasn't much."
         "You were able to spend your summer relaxing and doing nothing, which was nice after the stress of school, but mostly you were bored."
         "When you went back to school afterward, it felt like a blink and like summer had never happened. It sucked hearing about everyone's awesome jobs and opportunities."

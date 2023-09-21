@@ -75,7 +75,7 @@ label Y1_S2_C3:
         "You all begin awkwardly staring at each other and then looking at the paper."
         menu:
             "The professor starts to walk by"
-            "You ask your group your group how their weekend was":
+            "You ask your group how their weekend was":
                 jump Y1_S2_C7
             "You don't say anything":
                 jump Y1_S2_C8
